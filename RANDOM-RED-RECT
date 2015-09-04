@@ -1,0 +1,31 @@
+
+
+void setup(){
+  size (500,500);
+}
+
+
+
+
+void draw (){
+  background (120);
+  
+  
+  // el For tiene tres instancias de la misma variable.
+  for ( int a = 100; a<390; a = a + 20){
+    // crear un for anidado para empaquetar todo
+    for ( int b = 100; b<400; b = b + 20){
+  rect(a,b,20,20);
+  fill(random(234), 34,66);
+    }
+
+
+for (int c = 100; c <410; c = c + 20){
+  line (c, 0, c, 500);
+}
+
+for (int d = 100; d <410; d = d + 20){
+line(0,d,500,d);
+}
+  }
+}
